@@ -1,0 +1,18 @@
+.bg-img {
+    background-image: linear-gradient(0deg, rgba(77, 77, 77, 0.6), rgba(77, 77, 77, 0.6)), url(/assets/images/background-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.p1-img {
+    content: url(/assets/images/person1.jpg)
+}
+
+.p2-img {
+    content: url(/assets/images/person2.jpg)
+}
+
+.p3-img {
+    content: url(/assets/images/person3.jpg)
+}

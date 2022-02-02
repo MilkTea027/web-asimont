@@ -1,0 +1,43 @@
+<div class="pages-container">
+    <div class="nav-bar-container" [ngClass]="{'nav-scrolled': !onTopPage }">
+        <div class="nav-title">
+            <label>Asimont.Net</label>
+        </div>
+        <div class="nav-links">
+            <a href="#home-section">
+                Home
+                <span class="slider"></span>
+            </a>
+            <a (click)="goTo('about-section')">
+                About
+                <span class="slider"></span>
+            </a>
+            <a (click)="goTo('services-section')">
+                Services<span class="slider"></span></a>
+            <a (click)="goTo('contact-section')">
+                Contact
+                <span class="slider"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="page-container" id="home-section">
+        <home-page></home-page>
+    </div>
+
+    <div class="page-container" id="about-section">
+        <about-page></about-page>
+    </div>
+
+    <div class="page-container" id="services-section">
+        <services-page></services-page>
+    </div>
+
+    <div class="page-container" id="contact-section">
+        <contact-us-page></contact-us-page>
+    </div>
+
+    <div class="footer-container">
+        <label>Copyright © {{currentYear}} Asimont. All rights reserved.</label>
+    </div>
+</div>

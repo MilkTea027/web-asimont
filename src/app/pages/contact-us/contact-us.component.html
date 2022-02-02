@@ -1,0 +1,57 @@
+<div class="contact-us-page-container bg-img">
+    <div class="labels-container">
+        <label class="label-content-title">Contact Us</label>
+        <label class="label-content-detail">If you have any queries or questions, reach out to us by filling this form.</label>
+        <label class="label-content-detail">Our trained specialist will be in touch for in-depth discussion.</label>
+    </div>
+
+    <div class="form-container">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="form-group mt0">
+                <label>Name<span class="required">*</span></label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       class="form-control"
+                       formControlName="name"
+                       autocomplete="asimont-name">
+            </div>
+
+            <div class="form-group">
+                <label>Email<span class="required">*</span></label>
+                <input type="text"
+                       id="email"
+                       name="email"
+                       class="form-control"
+                       formControlName="email"
+                       autocomplete="asimont-email">
+            </div>
+
+            <div class="form-group">
+                <label>Subject</label>
+                <input type="text"
+                       id="subject"
+                       name="subject"
+                       class="form-control"
+                       formControlName="subject"
+                       autocomplete="asimont-subject">
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea formControlName="message" autocomplete="asimont-msg"></textarea>
+            </div>
+
+            <div class="invalid-message"
+                 *ngIf="(controlName.errors && (controlName.dirty || controlName.touched)) ||
+                 (controlEmail.errors && (controlEmail.dirty || controlEmail.touched))">
+                <label>Valid email and name required*</label>
+            </div>
+
+            <div class="button-container">
+                <button class="yellow-btn" type="submit" [disabled]="contactForm.invalid">Send</button>
+            </div>
+
+        </form>
+    </div>
+</div>

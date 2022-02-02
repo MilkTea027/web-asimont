@@ -1,0 +1,28 @@
+.home-page-container {
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    .content-container {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: calc(50% + 5rem);
+        transform: translate(-50%, -50%);
+
+        label {
+            text-align: center;
+
+            &.label-content-title {
+                text-transform: uppercase;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}

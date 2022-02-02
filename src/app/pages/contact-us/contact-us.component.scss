@@ -1,0 +1,69 @@
+.contact-us-page-container {
+    height: fit-content;
+    width: 100%;
+
+    .labels-container {
+        padding-top: 90px;
+        padding-bottom: 4rem;
+    }
+
+    .form-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 32rem;
+        border-radius: 3px;
+        padding-bottom: 90px;
+
+        form {
+            padding: 2rem;
+            background-color: #F8F8F8;
+            border-radius: 3px;
+
+            textarea {
+                height: 6rem;
+            }
+    
+            .form-group {
+                display: flex;
+                margin: 1rem 0;
+                align-items: center;
+
+                label {
+                    width: 7rem;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 1rem;
+
+                    span.required {
+                        color: #E9002B;
+                    }
+                }
+            }
+
+            .invalid-message {
+                text-align: center;
+                
+                label {
+                    color: #E9002B;
+                }
+            }
+
+            .button-container {
+                width: 100%;
+                margin-top: 2rem;
+
+                button {
+                    width: 8rem;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .form-container {
+            max-width: 25rem;
+        }
+    }
+}
