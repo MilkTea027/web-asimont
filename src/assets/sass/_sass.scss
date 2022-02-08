@@ -130,6 +130,9 @@ textarea {
     padding: 0.375rem 0.75rem;
     width: 100% !important;
     resize: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 
     &:focus {
         border: 1px solid #c5ccd3;

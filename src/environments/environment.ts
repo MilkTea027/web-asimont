@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  communicationsApi: 'https://opus-gaming.com/smtpapi',
+  email: {
+    from: 'no-reply@asimont.net',
+    to: 'patrick.fu@asimont.net,paul.tam@asimont.net'
+  }
 };
 
 /*
